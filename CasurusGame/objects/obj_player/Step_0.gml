@@ -2,11 +2,10 @@
 // You can write your code in this editor
 move_x = (keyboard_check(vk_right) - keyboard_check(vk_left)) * move_speed;
 
-
-
 if place_meeting(x, y+2, obj_floor){
 	move_y = 0;
-	if keyboard_check_pressed(vk_space) move_y = -jump_speed
+	if keyboard_check_pressed(vk_space) 
+	move_y = -jump_speed
 } else if move_y < 10 {
 	move_y += 1;
 }
@@ -17,8 +16,10 @@ if move_x != 0 {
 	image_xscale = sign(move_x);
 	sprite_index = spr_running;
 } else {
-	running = false;
 	sprite_index = spr_player;
 	image_speed = 1.0;
-	
 }
+if health <= 0 {
+	sprite_index = spr_death;
+}
+

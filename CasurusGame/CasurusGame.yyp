@@ -35,8 +35,11 @@
   "name":"CasurusGame",
   "resources":[
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
+    {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},},
+    {"id":{"name":"spr_death","path":"sprites/spr_death/spr_death.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_running","path":"sprites/spr_running/spr_running.yy",},},
