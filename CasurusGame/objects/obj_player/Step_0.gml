@@ -38,7 +38,7 @@ if keyboard_check_pressed(ord("F")) && canAttack = true{
 	global.stamina -= 10;
 }
 // Can jump when on ground and has enough Stamina to do so.
-if place_meeting(x, y+2, obj_floor){
+if place_meeting(x, y+1, obj_floor){
 	move_y = 0;
 	if keyboard_check_pressed(vk_space) && canJump = true{ 
 	move_y = -jump_speed
@@ -51,4 +51,3 @@ if place_meeting(x, y+2, obj_floor){
 if health <= 0 {
 	sprite_index = spr_death;
 }
-
