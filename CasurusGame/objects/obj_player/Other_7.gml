@@ -3,3 +3,6 @@
 if(sprite_index == spr_death){
     instance_destroy();
 }
+if(sprite_index == spr_attack){
+	state = "active";
+}

@@ -36,7 +36,6 @@ if keyboard_check_pressed(ord("F")) && canAttack = true{
 	sprite_index = spr_attack;
 	image_speed = 1;
 	global.stamina -= 10;
-	alarm[1] = 10;
 }
 // Can jump when on ground and has enough Stamina to do so.
 if place_meeting(x, y+1, obj_floor){
