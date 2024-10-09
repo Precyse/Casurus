@@ -28,7 +28,6 @@ switch(state){
 		}
 } // end switch
 
-
 // Can Attack When Pressing F key and Has enough Stamina
 // Stamina check is in active switch-case
 if keyboard_check_pressed(ord("F")) && canAttack = true{

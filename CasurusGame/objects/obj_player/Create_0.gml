@@ -9,8 +9,11 @@ move_y = 0;
 health = 100;
 global.stamina = 80;
 
-state = "active";
 canJump = true;
 canAttack = true;
 
+<<<<<<< Updated upstream
 invincible = false;
+=======
+state = "active"
+>>>>>>> Stashed changes
