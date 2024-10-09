@@ -6,9 +6,6 @@ if(obj_player){
 }
 if place_meeting(x, y+1, obj_floor){
 	move_y = 0;
-	gravity = 0;
-} else{
-	gravity = 1;
 }
 if (hspeed != 0) {
     image_xscale = sign(hspeed);
