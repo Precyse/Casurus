@@ -12,3 +12,5 @@ global.stamina = 80;
 state = "active";
 canJump = true;
 canAttack = true;
+
+invincible = false;
