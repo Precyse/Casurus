@@ -4,6 +4,7 @@ if (global.stamina >= self.attack_stamina_cost) {
 	state = "inactive";
 	self.attacking = true;
 	sprite_index = spr_attack;
+	image_index = 0;
 	image_speed = 1;
 	global.stamina -= self.attack_stamina_cost;
 }

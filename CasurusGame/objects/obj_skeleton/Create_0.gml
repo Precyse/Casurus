@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-health = 10;
+obj_skeleton.health = 10;
 direction = 0;
 
 move_x = 0;

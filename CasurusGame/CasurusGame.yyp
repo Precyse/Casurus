@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"casurusFont","path":"fonts/casurusFont/casurusFont.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
+    {"id":{"name":"obj_deathTitle","path":"objects/obj_deathTitle/obj_deathTitle.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},},
     {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
@@ -43,7 +44,6 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
-    {"id":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
     {"id":{"name":"rm_levelOne","path":"rooms/rm_levelOne/rm_levelOne.yy",},},
     {"id":{"name":"rm_startScreen","path":"rooms/rm_startScreen/rm_startScreen.yy",},},
     {"id":{"name":"create_hitbox","path":"scripts/create_hitbox/create_hitbox.yy",},},
@@ -68,7 +68,6 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_startScreen","path":"rooms/rm_startScreen/rm_startScreen.yy",},},
     {"roomId":{"name":"rm_levelOne","path":"rooms/rm_levelOne/rm_levelOne.yy",},},
-    {"roomId":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
