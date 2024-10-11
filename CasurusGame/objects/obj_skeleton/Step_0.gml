@@ -27,7 +27,6 @@ if (hspeed != 0) {
 }
 
 
-
 if(distance_to_object(obj_player) < 5){
 	sprite_index = spr_skeletonAttack;
 }
@@ -44,10 +43,6 @@ if (place_meeting(x, y, obj_player)) {  // TODO: Add a movement cooldown - cant 
 		hspeed = 0;
     }
 }
-
-
-
-
 
 // Apply Movement
 x += hspeed;
