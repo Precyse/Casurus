@@ -5,4 +5,5 @@ if(sprite_index == spr_death){
 }
 if(sprite_index == spr_attack){
 	state = "active";
+	self.attacking = false;
 }
