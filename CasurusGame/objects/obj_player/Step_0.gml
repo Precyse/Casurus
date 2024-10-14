@@ -20,7 +20,8 @@ if (keyboard_check(vk_right)) {
 } else {
 	if (place_meeting(x, y+1, obj_floor) || self.attacking) {hspeed = hspeed/1.2;} //slow the player down over time when touching floor or attacking
 	// if no floor, dont set to 0 
-	if (hspeed < 0.1 && hspeed > -0.1) {hspeed = 0;}						// set to 0 when small enough
+	if (hspeed < 0.1 && hspeed > -0.1) {hspeed = 0;}		
+	// set to 0 when small enough
 }
 hspeed = clamp(hspeed, -self.walk_speed_max, self.walk_speed_max);
 
@@ -39,7 +40,6 @@ switch(state){
 			can_jump = true;
 			can_attack = true;
 		}
-		//move_and_collide(hspeed, vspeed, obj_floor);
 
 		if hspeed != 0 {
 			image_xscale = sign(hspeed);

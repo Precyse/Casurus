@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-sprite_index = spr_skeleton;
-canAttack = true;
+image_alpha = 0;

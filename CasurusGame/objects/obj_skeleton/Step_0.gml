@@ -27,7 +27,7 @@ if (hspeed != 0) {
 }
 
 
-if(distance_to_object(obj_player) < 5){
+if(distance_to_object(obj_player) < 5) && canAttack = true{
 	sprite_index = spr_skeletonAttack;
 }
 
