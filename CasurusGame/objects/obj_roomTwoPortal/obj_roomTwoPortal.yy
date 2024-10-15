@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"levelPortalHitbox",
-    "path":"sprites/levelPortalHitbox/levelPortalHitbox.yy",
+    "name":"spr_nextLevelPortal",
+    "path":"sprites/spr_nextLevelPortal/spr_nextLevelPortal.yy",
   },
   "spriteMaskId":null,
   "visible":true,
