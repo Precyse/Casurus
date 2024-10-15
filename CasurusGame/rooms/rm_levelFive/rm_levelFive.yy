@@ -52,9 +52,8 @@
           0,-6,-2147483648,-2,0,-2,-2147483648,-2,0,-26,-2147483648,-2,0,-10,-2147483648,-2,0,-26,-2147483648,
           -2,0,-10,-2147483648,-2,0,-26,-2147483648,-2,0,-10,-2147483648,-2,0,-26,-2147483648,-2,0,3,163,164,165,
           -7,-2147483648,-2,0,-26,-2147483648,-2,0,3,194,195,196,-7,-2147483648,-2,0,-4,-2147483648,3,223,224,
-          224,-19,-2147483648,-2,0,3,225,226,227,-7,-2147483648,-2,0,-26,-2147483648,-2,0,-10,-2147483648,-2,0,
-          -4,-2147483648,-2,223,1,224,-19,-2147483648,-2,0,-10,-2147483648,-2,0,-18,-2147483648,4,223,224,223,
-          224,-4,-2147483648,-5,0,-2,-2147483648,
+          224,-19,-2147483648,-2,0,3,225,226,227,-7,-2147483648,-2,0,-2,-2147483648,-5,0,-19,-2147483648,-2,0,
+          -10,-2147483648,-2,0,-4,-2147483648,-2,223,1,224,-19,-2147483648,-2,0,-5,-2147483648,-40,1,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_default","path":"tilesets/ts_default/ts_default.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_21C67D21_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21C67D21_1_1_1_1","objectId":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":16.0,},

@@ -28,12 +28,16 @@ if (hspeed != 0) {
 
 
 if(distance_to_object(obj_player) < 5) && canAttack = true{
+	health -= 10;
 	sprite_index = spr_skeletonAttack;
+	canAttack = false;
+	alarm[0] = 60;
 }
 
 if (place_meeting(x, y, obj_player)) {  // TODO: Add a movement cooldown - cant move for 0.2 sec after contacting player
     // Move the skeleton out of the collision using a small push in the opposite direction
-
+	canMove = false;
+	alarm[1] = 100;
     // Push the skeleton in the opposite direction from the player
     if (x < obj_player.x) {
         x -= self.push_back_speed; // Move left

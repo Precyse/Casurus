@@ -5,7 +5,7 @@ direction = 0;
 
 move_x = 0;
 move_y = 0;
-
+canMove = true;
 canAttack = true;
 
 //push_back_speed = 0.7;
