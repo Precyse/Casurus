@@ -9,8 +9,8 @@
   "name":"obj_roomTwoPortal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Invisible Objects",
+    "path":"folders/Objects/Invisible Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
