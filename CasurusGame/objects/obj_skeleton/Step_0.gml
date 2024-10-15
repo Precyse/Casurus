@@ -51,3 +51,5 @@ if (place_meeting(x, y, obj_player)) {  // TODO: Add a movement cooldown - cant 
 // Apply Movement
 x += hspeed;
 y += vspeed;
+
+if (obj_skeleton.health <= 0){instance_destroy();}
