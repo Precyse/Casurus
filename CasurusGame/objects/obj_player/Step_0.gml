@@ -1,3 +1,18 @@
+//Horizontal Collisions - Bugged, stops player entirely for some reason
+// if(place_meeting(x + hspeed, y, obj_floor)){
+//	while(!place_meeting(x + sign(hspeed),y, obj_floor))
+//		x += sign(hspeed)
+//	hspeed = 0;
+//}
+
+
+//Vertical Collisions
+if(place_meeting(x, y + vspeed, obj_floor)){
+	while(!place_meeting(x,y + sign(vspeed) , obj_floor))
+		y += sign(vspeed)
+	vspeed = 0;
+}
+
 // Apply Gravity
 if (place_meeting(x, y+1, obj_floor) && vspeed >= 0) {						// Dont fall when on floor
 	vspeed = 0;
