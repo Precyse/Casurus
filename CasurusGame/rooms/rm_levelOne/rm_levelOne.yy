@@ -96,6 +96,7 @@
     {"name":"inst_21C67D21","path":"rooms/rm_levelOne/rm_levelOne.yy",},
     {"name":"inst_FBD3D0","path":"rooms/rm_levelOne/rm_levelOne.yy",},
     {"name":"inst_4236A6E8","path":"rooms/rm_levelOne/rm_levelOne.yy",},
+    {"name":"inst_79C8DE12","path":"rooms/rm_levelOne/rm_levelOne.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -190,6 +191,7 @@
         {"$GMRInstance":"v1","%Name":"inst_21C67D21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21C67D21","objectId":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":16.0,},
         {"$GMRInstance":"v1","%Name":"inst_FBD3D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FBD3D0","objectId":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":720.0,},
         {"$GMRInstance":"v1","%Name":"inst_4236A6E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4236A6E8","objectId":{"name":"obj_roomTwoPortal","path":"objects/obj_roomTwoPortal/obj_roomTwoPortal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.25,"scaleY":2.25,"x":1344.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_79C8DE12","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_79C8DE12","objectId":{"name":"obj_healthPotion","path":"objects/obj_healthPotion/obj_healthPotion.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":496.0,"y":736.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRTileLayer":"","%Name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
