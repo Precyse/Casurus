@@ -31,7 +31,7 @@ if(distance_to_object(obj_player) < 5) && canAttack = true{
 	health -= 10;
 	sprite_index = spr_skeletonAttack;
 	canAttack = false;
-	alarm[0] = 60;
+	alarm[0] = 100;
 }
 
 if (place_meeting(x, y, obj_player)) {  // TODO: Add a movement cooldown - cant move for 0.2 sec after contacting player
