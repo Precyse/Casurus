@@ -7,6 +7,11 @@ if (global.stamina >= self.attack_stamina_cost) {
 	image_index = 0;
 	image_speed = 1;
 	global.stamina -= self.attack_stamina_cost;
-	if(distance_to_object(obj_boss) < 7){obj_boss.health -= 10}
+	if(distance_to_object(obj_boss) < 7){
+		obj_boss.health -= 10
+		sprite_index.obj_boss = spr_boss_hit
+		}
 	if(distance_to_object(obj_skeleton) < 7){obj_skeleton.health -= 10}
+	if(distance_to_object(obj_goblin) < 7){obj_goblin.health -= 10}
+	if (distance_to_object(obj_flying_eye) < 7){obj_flying_eye.health -= 10}
 }

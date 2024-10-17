@@ -65,3 +65,19 @@ y += vspeed;
 // Prevent OoB
 x = clamp(x,5, room_width-5);
 y = clamp(y,0,room_height);
+
+// Climb Ladder
+if (instance_place(x, y, obj_ladder)) {
+	climbing = true
+	vspeed = 0
+	gravity = 0
+} else {
+	climbing = false
+} if (climbing) {
+	if (keyboard_check(vk_up)) {
+		vspeed -= 1
+	} else if (keyboard_check(vk_down)) {
+		vspeed += 1
+	}
+	vspeed = clamp(vspeed, -1, 1)
+}
