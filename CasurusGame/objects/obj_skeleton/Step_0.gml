@@ -1,6 +1,6 @@
 // Apply Gravity
-if (!place_meeting(x, y + 1, obj_floor)) {   // Don't fall when on floor
-    vspeed = 1;
+if (place_meeting(x, y + 1, obj_floor) && vspeed >= 0) {   // Don't fall when on floor
+    vspeed = 0;
 } else if (vspeed < 0) {   // Apply weaker gravity when jumping
     vspeed += self.mygravity * 0.8;
     vspeed = clamp(vspeed, -self.fall_speed_max, self.fall_speed_max);
@@ -72,3 +72,5 @@ y += vspeed;
 if (obj_skeleton.health <= 0) {
     instance_destroy();
 }
+
+
