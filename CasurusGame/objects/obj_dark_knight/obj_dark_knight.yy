@@ -9,10 +9,7 @@
   ],
   "managed":true,
   "name":"obj_dark_knight",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},"propertyId":{"name":"walk_speed_max","path":"objects/obj_skeleton/obj_skeleton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},"propertyId":{"name":"walk_speed","path":"objects/obj_skeleton/obj_skeleton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.4",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Characters",
     "path":"folders/Objects/Characters.yy",

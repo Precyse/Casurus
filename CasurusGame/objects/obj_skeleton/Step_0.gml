@@ -1,13 +1,6 @@
-// states
-enum SkeleState {
-    Idle,
-    Running,
-    Attacking
-}
-
 // Apply Gravity
-if (place_meeting(x, y + 1, obj_floor) && vspeed >= 0) {   // Don't fall when on floor
-    vspeed = 0;
+if (!place_meeting(x, y + 1, obj_floor)) {   // Don't fall when on floor
+    vspeed = 1;
 } else if (vspeed < 0) {   // Apply weaker gravity when jumping
     vspeed += self.mygravity * 0.8;
     vspeed = clamp(vspeed, -self.fall_speed_max, self.fall_speed_max);
@@ -38,7 +31,7 @@ if (state != SkeleState.Attacking) {
     if (hspeed != 0) {
         state = SkeleState.Running;
         image_xscale = sign(hspeed); // gets skele direction
-        sprite_index = spr_skeletonRunning;
+        sprite_index = spr_skeleton_run;
     } else {
         state = SkeleState.Idle;
         sprite_index = spr_skeleton;
@@ -50,7 +43,7 @@ if (distance_to_object(obj_player) < 5 && canAttack) {
     state = SkeleState.Attacking;
     canAttack = false;
     canMove = false;
-    sprite_index = spr_skeletonAttack;
+    sprite_index = spr_skeleton_attack;
     alarm[0] = 1000; // Cooldown for attack
     alarm[2] = sprite_get_number(sprite_index) * sprite_get_speed(sprite_index); // set alarm to end attack
     health -= 10; 
