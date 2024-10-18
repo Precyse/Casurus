@@ -21,7 +21,7 @@ function get_controls(){
 	jumpKey = clamp(jumpKey,0,1);
 	
 	// Jump Key Buffering
-	if jumpKeyPressed{
+	if jumpKeyPressed && canJump == true{
 		jumpKeyBufferTimer = bufferTime;
 	}
 	if jumpKeyBufferTimer > 0{

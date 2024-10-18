@@ -27,9 +27,11 @@ face = 1;
 xspd = 0;
 moveDir = 0;
 moveSpd = 3;
+canJump = true;
 
 //Attacking
 isAttacking = false;
+canAttack = true;
 
 // Jumping
 yspd = 0;

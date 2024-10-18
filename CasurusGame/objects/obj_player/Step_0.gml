@@ -71,7 +71,7 @@ y = clamp(y, 0, room_height);
 	y += yspd;
 	
 //Attacking
-if(keyboard_check_pressed(ord("F"))){
+if(keyboard_check_pressed(ord("F")) && canAttack == true){
 	isAttacking = true;
 	alarm[0] = 30;
 	global.stamina -= 10;
@@ -86,6 +86,12 @@ if((yspd > 0 || yspd < 0) && isAttacking == true){
 //Stamina Control
 if global.stamina <= 80 && (sprite_index = idleSpr || sprite_index = runSpr){
 	global.stamina += 0.2;
+	canJump = true;
+	canAttack = true;
+}
+if global.stamina <= 0{
+	canAttack = false;
+	canJump = false;
 }
 
 
