@@ -1,5 +1,5 @@
 // Apply Gravity
-if (place_meeting(x, y+1, obj_floor) && vspeed >= 0) {						// Dont fall when on floor
+if ((place_meeting(x, y+1, obj_floor) || place_meeting(x, y+1, obj_grassFloor)) && vspeed >= 0) {						// Dont fall when on floor
 	vspeed = 0;
 } else if (self.attacking) {												// Dont fall when attacking
 	vspeed = 0;
@@ -18,7 +18,7 @@ if (keyboard_check(vk_right)) {
 } else if (keyboard_check(vk_left)) {
 	hspeed -= self.walk_speed;
 } else {
-	if (place_meeting(x, y+1, obj_floor) || self.attacking) {hspeed = hspeed/1.2;} //slow the player down over time when touching floor or attacking
+	if (place_meeting(x, y+1, obj_floor) || place_meeting(x, y+1, obj_grassFloor) || self.attacking) {hspeed = hspeed/1.2;} //slow the player down over time when touching floor or attacking
 	// if no floor, dont set to 0 
 	if (hspeed < 0.1 && hspeed > -0.1) {hspeed = 0;}		
 	// set to 0 when small enough
@@ -80,4 +80,5 @@ if (instance_place(x, y, obj_ladder)) {
 		vspeed += 1
 	}
 	vspeed = clamp(vspeed, -1, 1)
+	hspeed = clamp(hspeed, -1, 1)
 }

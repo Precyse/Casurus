@@ -1,3 +1,14 @@
+// Apply Gravity
+if (place_meeting(x, y+1, obj_grassFloor) && vspeed >= 0) {						// Dont fall when on floor
+	vspeed = 0;
+} else if (vspeed < 0) {													// Apply weaker gravity when jumping
+    vspeed += 0.1 * 0.8;
+	vspeed = clamp(vspeed, -10, 10);
+} else {																	// Apply full gravity
+    vspeed += 0.1;
+	vspeed = clamp(vspeed, -10, 10);
+}
+
 //Follows player
 if distance_to_object(obj_player) < attack_range {
 	path_end()

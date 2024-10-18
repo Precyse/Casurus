@@ -1,5 +1,5 @@
 // Apply Gravity
-if (place_meeting(x, y+1, obj_floor) && vspeed >= 0) {						// Dont fall when on floor
+if ((place_meeting(x, y+1, obj_floor) || place_meeting(x, y+1, obj_grassFloor)) && vspeed >= 0) {						// Dont fall when on floor
 	vspeed = 0;
 } else if (vspeed < 0) {													// Apply weaker gravity when jumping
     vspeed += self.mygravity * 0.8;
@@ -18,7 +18,7 @@ if (obj_player.x < x) {
 }
 }
 else {
-	if (place_meeting(x, y+1, obj_floor)) {hspeed = hspeed/1.2;} //slow the skeleton down over time when touching floor
+	if (place_meeting(x, y+1, obj_floor) || place_meeting(x, y+1, obj_grassFloor)) {hspeed = hspeed/1.2;} //slow the skeleton down over time when touching floor
 	// if no floor, dont set to 0 
 	if (hspeed < 0.1 && hspeed > -0.1) {hspeed = 0;}						// set to 0 when small enough
 }
