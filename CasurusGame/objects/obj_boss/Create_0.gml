@@ -17,3 +17,7 @@ isGroundPounding = false;
 
 teleportCooldown = 200; 
 groundPoundCooldown = 500; 
+
+isFloating = false; // To track floating state
+floatDuration = 30; // Duration to float (frames)
+floatCounter = 0; // Frame counter for floating
