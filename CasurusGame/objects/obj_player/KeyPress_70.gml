@@ -14,4 +14,8 @@ if (global.stamina >= self.attack_stamina_cost) {
 	if(distance_to_object(obj_skeleton) < 7){obj_skeleton.health -= 10}
 	if(distance_to_object(obj_goblin) < 7){obj_goblin.health -= 10}
 	if (distance_to_object(obj_flying_eye) < 7){obj_flying_eye.health -= 10}
+	if (distance_to_object(obj_dark_knight) < 7){obj_dark_knight.health -= 10}
+	if (distance_to_object(obj_wizard) < 7){obj_wizard.health -= 10}
+	if (distance_to_object(obj_water_priestess) < 7){obj_water_priestess.health -= 10}
+	if (distance_to_object(obj_flying_demon) < 7){obj_flying_demon.health -= 10}
 }
