@@ -94,10 +94,12 @@ switch (state) {
         attack_timer -= 1;
 
         // chase if player is too far
-        if ((dist_to_player > attack_range) && (dist_to_player < 10)){
+	if(dist_to_player < 110){
+        if ((dist_to_player > attack_range)){
             state = "chase";
             hspeed = walk_speed;
         }
+		
         // attack after cooldown
         else if (attack_timer <= 0) {
             state = "attack";
@@ -107,6 +109,10 @@ switch (state) {
             speed = 0;
             vspeed = 0;
         }
+	}
+	else{
+		hspeed = 0;
+	}
         break;
 }
 
