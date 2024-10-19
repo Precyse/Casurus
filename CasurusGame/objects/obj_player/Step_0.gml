@@ -121,7 +121,9 @@ if isAttacking == true {
 
 if health <= 0 {
 	sprite_index = deathSpr;
-	audio_play_sound(snd_death,false,false);
+	if !audio_is_playing(snd_death){
+		audio_play_sound(snd_death,false,false);
+	}
 }
 	
  

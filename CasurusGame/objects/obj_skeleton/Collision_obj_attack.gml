@@ -3,4 +3,4 @@
 if !audio_is_playing(snd_attackHit){
 	audio_play_sound(snd_attackHit,false,false);
 }
-self.health -= 1.5;
+self.health -= 5;

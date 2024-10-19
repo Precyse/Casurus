@@ -68,7 +68,6 @@
     {"id":{"name":"snd_attack","path":"sounds/snd_attack/snd_attack.yy",},},
     {"id":{"name":"snd_attackHit","path":"sounds/snd_attackHit/snd_attackHit.yy",},},
     {"id":{"name":"snd_boss_groundpound","path":"sounds/snd_boss_groundpound/snd_boss_groundpound.yy",},},
-    {"id":{"name":"snd_boss_jump","path":"sounds/snd_boss_jump/snd_boss_jump.yy",},},
     {"id":{"name":"snd_bossmusic","path":"sounds/snd_bossmusic/snd_bossmusic.yy",},},
     {"id":{"name":"snd_bossTeleport","path":"sounds/snd_bossTeleport/snd_bossTeleport.yy",},},
     {"id":{"name":"snd_buttonClick","path":"sounds/snd_buttonClick/snd_buttonClick.yy",},},
