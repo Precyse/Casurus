@@ -108,6 +108,10 @@ if yspd < 0 {sprite_index = jumpSpr; };
 
 if isAttacking == true {sprite_index = attackSpr; };
 
-if health <= 0 {sprite_index = deathSpr; };
+if health <= 0 {
+	sprite_index = deathSpr;
+	audio_play_sound(snd_death,false,false);
+}
+	
  
 mask_index = idleSpr;
