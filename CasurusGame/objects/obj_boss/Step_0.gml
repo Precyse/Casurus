@@ -82,6 +82,7 @@ if (teleportReady && isGroundPounding == false && canMove == true) {
     canMove = false;
     alarm[1] = 100;
 	var attack = instance_create_layer(x+30, y+5, "Instances", obj_teleport);
+	audio_play_sound(snd_bossTeleport,false,false);
 
     teleportReady = false;
     alarm[3] = teleportCooldown;
