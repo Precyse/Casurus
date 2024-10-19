@@ -8,8 +8,8 @@
   "name":"obj_title",
   "overriddenProperties":[],
   "parent":{
-    "name":"Invisible Objects",
-    "path":"folders/Objects/Invisible Objects.yy",
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
   "parentObjectId":null,
   "persistent":false,

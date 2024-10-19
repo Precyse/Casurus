@@ -32,6 +32,9 @@ if (hspeed != 0) {
 
 if(distance_to_object(obj_player) < 5) && canAttack = true{
 	health -= 20;
+	if !audio_is_playing(snd_enemy_attack){
+		audio_play_sound(snd_enemy_attack,false,false);
+	}
 	sprite_index = spr_dark_knight_attack;
 	canAttack = false
 	alarm[0] = 20

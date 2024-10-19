@@ -23,6 +23,7 @@ function get_controls(){
 	// Jump Key Buffering
 	if jumpKeyPressed && canJump == true{
 		jumpKeyBufferTimer = bufferTime;
+		audio_play_sound(snd_player_jump,false,false);
 	}
 	if jumpKeyBufferTimer > 0{
 		jumpKeyBuffered = 1;

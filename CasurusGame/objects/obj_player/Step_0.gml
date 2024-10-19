@@ -98,15 +98,26 @@ if global.stamina <= 0{
 
 
 // Animation Control
-if abs(xspd) > 0 {sprite_index = runSpr; };
-
+if abs(xspd) > 0 {
+	sprite_index = runSpr; 
+	if !audio_is_playing(snd_player_run){
+		audio_play_sound(snd_player_run,false,false);
+	}
+}
 if xspd == 0 {sprite_index = idleSpr; };
 
 if yspd > 0 {sprite_index = fallSpr; }; 
 
-if yspd < 0 {sprite_index = jumpSpr; };
+if yspd < 0 {
+	sprite_index = jumpSpr; 
+	}
 
-if isAttacking == true {sprite_index = attackSpr; };
+if isAttacking == true {
+	sprite_index = attackSpr; 
+	if !audio_is_playing(snd_attack){
+		audio_play_sound(snd_attack,false,false);
+	}
+}
 
 if health <= 0 {
 	sprite_index = deathSpr;

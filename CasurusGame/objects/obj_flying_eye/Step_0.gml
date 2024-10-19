@@ -17,6 +17,9 @@ if direction > 90 and direction < 270 {
 //enemy attacks player
 if (distance_to_object(obj_player) < 5 and can_attack = true) {
 	health -= 10
+	if !audio_is_playing(snd_enemy_attack){
+		audio_play_sound(snd_enemy_attack,false,false);
+	}
 	sprite_index = spr_flying_eye_attack
 	can_attack = false
 	alarm[1] = 50

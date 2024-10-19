@@ -11,6 +11,9 @@ if (place_meeting(x, y+1, obj_floor) && vspeed >= 0) {
         }
         
         // Reset ground pound states
+		if !audio_is_playing(snd_boss_groundpound){
+			audio_play_sound(snd_boss_groundpound,false,false);
+		}
         isGroundPounding = false;
         groundPoundReady = false;  
         alarm[2] = groundPoundCooldown;  
@@ -53,6 +56,9 @@ if (hspeed != 0) {
 // Basic attack
 if (distance_to_object(obj_player) < 5 && canAttack) {
     health -= 10;
+	if !audio_is_playing(snd_attackHit){
+	audio_play_sound(snd_attackHit,false,false);
+}
     sprite_index = spr_boss_attack; // Attack animation
     image_speed = 0.5; // Slower animation speed (adjust this value as needed)
     canAttack = false;

@@ -104,6 +104,9 @@ switch (state) {
         else if (attack_timer <= 0) {
             state = "attack";
             sprite_index = spr_skeleton_attack;
+		if !audio_is_playing(snd_enemy_attack){
+			audio_play_sound(snd_enemy_attack,false,false);
+			}
             image_index = 0;
             image_speed = 1;
             speed = 0;
