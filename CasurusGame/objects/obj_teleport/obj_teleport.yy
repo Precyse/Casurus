@@ -3,6 +3,7 @@
   "%Name":"obj_teleport",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_teleport",
@@ -11,10 +12,7 @@
     "name":"Invisible Objects",
     "path":"folders/Objects/Invisible Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_attack",
-    "path":"objects/obj_attack/obj_attack.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

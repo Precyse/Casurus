@@ -75,7 +75,7 @@ if (teleportReady && isGroundPounding == false && canMove == true) {
     var randX = obj_player.x + irandom_range(-100, 100);
     var randY = obj_player.y + irandom_range(-50, 50);
     randX = clamp(randX, 0, room_width - sprite_width); 
-    randY = clamp(randY, 0, room_height - sprite_height); 
+    randY = clamp(randY, 0, room_height - sprite_height + 1); 
    
     x = randX;
     y = randY;

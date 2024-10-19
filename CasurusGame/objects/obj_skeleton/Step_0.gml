@@ -21,7 +21,7 @@ if (place_meeting(x, y + 1, obj_floor) && vspeed >= 0) {   // Don't fall when on
 }
     
 // death check
-if (health <= 0 && state != "dead") {
+if (self.health <= 0 && state != "dead") {
     state = "dead";
     speed = 0;
     vspeed = 0;
@@ -112,7 +112,7 @@ switch (state) {
 
 if (isGroundPounding) {
     if (abs(x - obj_player.x) < 30) {
-        health -= groundPoundDamage;
+        self.health -= groundPoundDamage;
         canMove = false;
         alarm[1] = 100; // Delay after hitting the player
     }

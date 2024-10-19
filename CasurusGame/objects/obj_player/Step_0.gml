@@ -87,7 +87,7 @@ if((yspd > 0 || yspd < 0) && isAttacking == true){
 
 //Stamina Control
 if global.stamina <= 80 && (sprite_index = idleSpr || sprite_index = runSpr){
-	global.stamina += 0.2;
+	global.stamina += 0.5;
 	canJump = true;
 	canAttack = true;
 }
