@@ -39,6 +39,7 @@
   "name":"CasurusGame",
   "resources":[
     {"id":{"name":"casurusFont","path":"fonts/casurusFont/casurusFont.yy",},},
+    {"id":{"name":"obj_attack","path":"objects/obj_attack/obj_attack.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_dark_knight","path":"objects/obj_dark_knight/obj_dark_knight.yy",},},
     {"id":{"name":"obj_deathTitle","path":"objects/obj_deathTitle/obj_deathTitle.yy",},},

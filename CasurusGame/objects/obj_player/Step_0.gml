@@ -75,6 +75,8 @@ if(keyboard_check_pressed(ord("F")) && canAttack == true){
 	isAttacking = true;
 	alarm[0] = 30;
 	global.stamina -= 10;
+	var attack = instance_create_layer(x+30, y+5, "Instances", obj_attack);
+	attack.direction = image_xscale;
 }
 if((yspd > 0 || yspd < 0) && isAttacking == true){
 	yspd = 0;

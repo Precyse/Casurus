@@ -66,12 +66,12 @@ if (groundPoundReady && distance_to_object(obj_player) < 50) {
     if (place_meeting(x, y+1, obj_floor)) {
         vspeed = groundPoundHeight; // Jump for ground pound
         isGroundPounding = true;
-        sprite_index = spr_boss_idle; // You can use a different animation here if you have one
+        sprite_index = spr_boss_idle;
     }
 }
 
 // Teleport Logic
-if (teleportReady && isGroundPounding == false) { 
+if (teleportReady && isGroundPounding == false && canMove == true) { 
     var randX = obj_player.x + irandom_range(-100, 100);
     var randY = obj_player.y + irandom_range(-50, 50);
     randX = clamp(randX, 0, room_width - sprite_width); 
@@ -94,6 +94,6 @@ y += vspeed;
 // Reset sprite to idle if not in action
 if (self.health <= 0) { 
     instance_destroy();
-} else if (canAttack == false && !isGroundPounding && !teleportReady) {
+} else if (!isGroundPounding && !teleportReady) {
     sprite_index = spr_boss_idle; // Reset to idle after actions
 }
