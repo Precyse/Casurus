@@ -1,14 +1,10 @@
-// states
-enum SkeleState {
-    Idle,
-    Running,
-    Attacking
-}
+/// @description Insert description here
+// You can write your code in this editor
+state = "chase";              
+health = 100;                   
+target = obj_player;
 
-obj_skeleton.health = 10;
-direction = 0;
-move_x = 0;
-move_y = 0;
-canMove = true;
-canAttack = true;
-state = SkeleState.Idle;
+groundPoundHeight = -100; 
+groundPoundDamage = 10;  
+isGroundPounding = false;
+
