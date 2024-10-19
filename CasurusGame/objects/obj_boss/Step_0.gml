@@ -81,6 +81,7 @@ if (teleportReady && isGroundPounding == false && canMove == true) {
     y = randY;
     canMove = false;
     alarm[1] = 100;
+	var attack = instance_create_layer(x+30, y+5, "Instances", obj_teleport);
 
     teleportReady = false;
     alarm[3] = teleportCooldown;

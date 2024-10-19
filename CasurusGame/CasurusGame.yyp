@@ -54,6 +54,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_roomTwoPortal","path":"objects/obj_roomTwoPortal/obj_roomTwoPortal.yy",},},
     {"id":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},},
+    {"id":{"name":"obj_teleport","path":"objects/obj_teleport/obj_teleport.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"bat_path","path":"paths/bat_path/bat_path.yy",},},

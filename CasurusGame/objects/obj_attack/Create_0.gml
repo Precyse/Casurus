@@ -1,2 +1,2 @@
-lifetime = 5; 
+lifetime = 1; 
 image_alpha = 0;
