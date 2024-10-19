@@ -9,8 +9,8 @@
   "name":"obj_flying_demon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Characters",
-    "path":"folders/Objects/Characters.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Unused.yy",
   },
   "parentObjectId":{
     "name":"obj_flying_eye",
