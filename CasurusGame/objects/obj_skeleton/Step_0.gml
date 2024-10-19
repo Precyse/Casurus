@@ -94,7 +94,7 @@ switch (state) {
         attack_timer -= 1;
 
         // chase if player is too far
-        if (dist_to_player > attack_range) {
+        if ((dist_to_player > attack_range) && (dist_to_player < 10)){
             state = "chase";
             hspeed = walk_speed;
         }
